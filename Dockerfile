@@ -2,7 +2,7 @@
 # Production-hardened with non-root user, read-only filesystem, and minimal capabilities
 
 # Stage 1: Build
-FROM node:20.18.1-alpine3.20 AS builder
+FROM node:24.1.0-alpine3.20 AS builder
 
 WORKDIR /app
 
@@ -20,7 +20,7 @@ COPY . .
 RUN npm run build
 
 # Stage 2: Runtime
-FROM node:20.18.1-alpine3.20 AS runtime
+FROM node:24.1.0-alpine3.20 AS runtime
 
 # Security: Create non-root user
 RUN addgroup -g 1001 -S jsonatomic && \
