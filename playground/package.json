@@ -15,7 +15,7 @@
     "react-dom": "^18.2.0",
     "@noble/curves": "^1.4.0",
     "@noble/hashes": "^1.4.0",
-    "zod": "^3.22.0"
+    "zod": "^4.3.6"
   },
   "devDependencies": {
     "@types/react": "^18.2.0",
